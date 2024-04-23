@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    background-color: #A3A9AA;
+    min-height: 100%;
+}
+
+.topElement{
+    display: flex;
+    background-color: #454851;
+    padding-left: 14px;
+    font-family: "Gill Sans Ultra Bold Condensed", sans-serif;
+}
+
+.topElement h4{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #F2545B;
+}
+.menuButtons{
+    position: absolute;
+    padding-right: 14px;
+    right: 0;
+}
+.menuButtons button{
+    background-color: #454851;
+    border: #454851;
+    height: 50px;
+    color: #DADDD8;
+}
+.menuButtons button:hover{
+    color: #F2545B;
+}
+.menuButtons span{
+    border: 1px solid #F2545B;
+}
+
+.mainApplication{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#canvas:hover{
+    cursor: crosshair;
+}
+#canvas:hover .cursor{
+    transform: translate(-50%, -50%) scale(50);
+}
+.toolMenu{
+    margin: auto;
+    padding-left: 10px;
+}
+
+.colorTool{
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    margin-bottom: 4px;
+}
+.sizeTool{
+    display: grid;
+}
+
+#penSize{
+    width: 32px;
+    margin-bottom: 4px;
+}
+input[type=number]{
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="color"]{
+    width: 200%;
+    height: 200%;
+    margin: -50%;
+}
+
+input[type=range][orient=vertical] {
+    appearance: slider-vertical;
+    width: 8px;
+    height: 175px;
+    padding: 0 14px;
+    margin-bottom: 4px;
+}
+
+.penTools{
+    display: grid;
+}
+.penTools button{
+    border-radius: 6px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 4px;
+}
+.penTools button img{
+    margin-top: 4px;
+    width: 24px;
+    height: auto;
+}
+
+.systemsBox{
+    position: fixed;
+    width: 200px;
+    height: 50px;
+    background-color: lightskyblue;
+    bottom: 2.53%;
+    left:1%;
+    border: 1px solid black;
+}
+
+#systemMessages{
+    text-align: center;
+    font-family: "Gill Sans Ultra Bold Condensed", sans-serif;
+    font-size: larger;
+}
