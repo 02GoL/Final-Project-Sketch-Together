@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="topElement">
+            <h4><b>Sketch Together</b></h4>
+            <div class="menuButtons">
+                <input title="Chat roomID" id="roomID" type="text" placeholder="Enter Room ID"/>
+                <button onclick="enterRoom()"><b>Enter Room</b></button>
+                <span></span>
+                <button onclick="newRoom()"><b>Create Room</b></button>
+                <span></span>
+                <button onclick="leaveRoom()"><b>Leave Room</b></button>
+                <span></span>
+                <button id="download"><b>Save</b></button>
+            </div>
+        </div>
+        <div class="mainApplication">
+            <div class="canvasElement">
+                <canvas id="canvas" style="border: 1px solid black"></canvas>
+            </div>
+            <div class="toolMenu">
+                <div class="colorTool">
+                    <input title="Pen Colour" type="color" id="colorSelector" value="#000000">
+                </div>
+                <div class="sizeTool">
+                    <input title="Pen Size" type="range" id="penSizeSlider" min="1" max="100" value="10" orient="vertical">
+                    <input title="Pen Size" type="number" id="penSize">
+                </div>
+                <div class="penTools">
+                    <button onclick="changePen()" id="penTool" style="border-color: red"><img src="assets/penIcon.png"></button>
+                    <button onclick="changeEraser()" id="eraserTool"><img src="assets/eraserIcon.png"></button>
+                </div>
+            </div>
+        </div>
+        <div class="systemsBox">
+            <p id="systemMessages">System messages</p>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>
